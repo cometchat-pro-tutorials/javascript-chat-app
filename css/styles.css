@@ -381,11 +381,11 @@ input {
 
 #cometchat {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 3.25rem);
 }
 
 #cometchat__widget {
   width: 100%;
-  height: calc(100% - 1.75rem);
+  height: 100%;
 }
 
