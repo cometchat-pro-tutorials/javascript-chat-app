@@ -202,7 +202,7 @@ if (loginBtn) {
               });
             } else { 
               // hide loading indicator.
-              setIsLoading(false);
+              hideLoading();
               alert(`Your user's name or password is not correct`);
             }
           }
@@ -210,12 +210,12 @@ if (loginBtn) {
       })
       .catch((error) => {      
         // hide loading indicator.
-        setIsLoading(false);
+        hideLoading();
         alert(`Your user's name or password is not correct`);
       });
     } else { 
       // hide loading indicator.
-      setIsLoading(false);
+      hideLoading();
       alert(`Your user's name or password is not correct`);
     }
   });
