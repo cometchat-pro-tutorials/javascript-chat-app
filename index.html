@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App with Vanilla JS</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script defer src="https://widget-js.cometchat.io/v2/cometchatwidget.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="header__left">
+      <img src="./img/logo-white.svg" alt="Build Chat Widget with CometChat" />
+      <div class="header__right header__right--hide" id="header__right">
+        <img src="" alt="Build Chat Widget with CometChat" id="user__image"/>
+        <span id="user__name"></span>
+      </div>
+    </div>
+    <span class="header__logout" id="header__logout"><span>Logout</span></span>
+  </div>
+  <div id="cometchat"></div>
+  <div id="loading" class="loading">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="/js/auth.js"></script>
+
+  <script src="/js/config.js"></script>
+
+  <script src="/js/util.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+</html>
