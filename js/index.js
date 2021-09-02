@@ -23,22 +23,14 @@ window.addEventListener('DOMContentLoaded', function() {
             }
             // launch cometchat widget
             if (user && user.uid) {
-              CometChatWidget.init({
-                "appID": `${config.CometChatAppId}`,
-                "appRegion": `${config.CometChatRegion}`,
-                "authKey": `${config.CometChatAuthKey}`
-              }).then(response => {
-                CometChatWidget.launch({
-                  "widgetID": `${config.CometChatWidgetId}`,
-                  "target": "#cometchat",
-                  "roundedCorners": "false",
-                  "height": "100%",
-                  "width": "100%",
-                  "defaultID": `${user.uid}`, //default UID (user) or GUID (group) to show,
-                  "defaultType": 'user' //user or group
-                });
-              }, error => {
-                //Check the reason for error and take appropriate action.
+              CometChatWidget.launch({
+                "widgetID": `${config.CometChatWidgetId}`,
+                "target": "#cometchat",
+                "roundedCorners": "false",
+                "height": "100%",
+                "width": "100%",
+                "defaultID": `${user.uid}`, //default UID (user) or GUID (group) to show,
+                "defaultType": 'user' //user or group
               });
             }
           
