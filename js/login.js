@@ -186,8 +186,6 @@ if (loginBtn) {
               }).then(response => {
                 CometChatWidget.login({uid: user.id}).then((loggedInUser) => {
                   // User loged in successfully.
-                  // save authenticated user to local storage.
-                  localStorage.setItem('auth', JSON.stringify(user));
                   // hide loading.
                   hideLoading();
                   // redirect to home page.
