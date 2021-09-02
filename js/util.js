@@ -8,12 +8,3 @@ function showLoading() {
   loading.classList.remove('loading--hide');
   loading.classList.add('loading--active');
 }
-
-function getAuthenticatedUser() {
-  const authenticatedUser = localStorage.getItem('auth');
-  return authenticatedUser ? JSON.parse(authenticatedUser) : null;
-}
-
-function removeAuthenticatedUser() { 
-  localStorage.removeItem('auth');
-}

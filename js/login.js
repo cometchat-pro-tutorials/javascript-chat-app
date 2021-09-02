@@ -115,11 +115,10 @@ function registerNewAccount({email, password, confirmPassword}) {
           user.setName(email);
           user.setAvatar(userAvatar);
           CometChatWidget.init({
-            "appID": `${config.cometChatAppId}`,
-            "appRegion": `${config.cometChatRegion}`,
-            "authKey": `${config.cometChatAuthKey}`
+            "appID": `${config.CometChatAppId}`,
+            "appRegion": `${config.CometChatRegion}`,
+            "authKey": `${config.CometChatAuthKey}`
           }).then(response => {
-            console.log("Initialization completed successfully");
             CometChatWidget.createOrUpdateUser(user).then(user => {
               hideLoading();
             } ,error => {
@@ -127,7 +126,6 @@ function registerNewAccount({email, password, confirmPassword}) {
             });
             hideSignUp();
           }, error => {
-            console.log("Initialization failed with error:", error);
             //Check the reason for error and take appropriate action.
           });
         });
@@ -182,11 +180,10 @@ if (loginBtn) {
             const user = val[keys[0]];
             if (user && user.id) {
               CometChatWidget.init({
-                "appID": `${config.cometChatAppId}`,
-                "appRegion": `${config.cometChatRegion}`,
-                "authKey": `${config.cometChatAuthKey}`
+                "appID": `${config.CometChatAppId}`,
+                "appRegion": `${config.CometChatRegion}`,
+                "authKey": `${config.CometChatAuthKey}`
               }).then(response => {
-                console.log("Initialization completed successfully");
                 CometChatWidget.login({uid: user.id}).then((loggedInUser) => {
                   // User loged in successfully.
                   // save authenticated user to local storage.
@@ -197,7 +194,6 @@ if (loginBtn) {
                   window.location.href = '/';
                 });
               }, error => {
-                console.log("Initialization failed with error:", error);
                 //Check the reason for error and take appropriate action.
               });
             } else { 

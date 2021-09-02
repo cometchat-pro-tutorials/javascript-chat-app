@@ -348,6 +348,11 @@ input {
   padding-left: 0.75rem;
 }
 
+.header__left h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
 .header__right {
   align-items: center;
   color: white;

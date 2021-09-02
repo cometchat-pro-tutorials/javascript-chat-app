@@ -40,11 +40,11 @@ const config = {
   messagingSenderId: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
   appId: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
   measurementId: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
-  cometChatAppId: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
-  cometChatRegion: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
-  cometChatAuthKey: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
-  cometChatAPIKey: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
-  cometChatWidgetId: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx
+  CometChatAppId: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
+  CometChatRegion: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
+  CometChatAuthKey: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
+  CometChatAPIKey: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx,
+  CometChatWidgetId: xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx
 };
 ```
 11. Make sure to include this file in your gitIgnore file from being exposed online.
