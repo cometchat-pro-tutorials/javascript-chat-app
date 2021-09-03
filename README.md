@@ -65,4 +65,4 @@ Questions about running the demo? [Open an issue](https://github.com/hieptl/java
 - 📚 [Documentation](https://prodocs.cometchat.com)
 - 👾 [GitHub](https://www.github.com/cometchat-pro)
 - 🔥 [Firebase](https://console.firebase.google.com)
-- ✨ [Live Demo]()
+- ✨ [Live Demo](https://javascript-chat-app.glitch.me)
